@@ -124,7 +124,7 @@
       (r/max [4 6]) 6
       (r/sum [3 4]) 7)))
 
-(deftest changefeeds
+#_(deftest changefeeds
   (with-open [conn (r/connect)]
     (let [changes (future
                     (-> (r/db test-db)
