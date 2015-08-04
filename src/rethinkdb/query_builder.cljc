@@ -4,8 +4,9 @@
             [rethinkdb.types :refer [tt->int qt->int]])
     #?(:clj
             [clj-time.coerce :as c])
-            [clojure.walk :as walk]
-            [clojure.data.json :as json]))
+    #?(:clj
+            [clojure.data.json :as json])
+            [clojure.walk :as walk]))
 
 (defn term [term args & [optargs]]
   {::term term
