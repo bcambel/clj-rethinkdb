@@ -9,13 +9,13 @@ All notable changes to this project will be documented in this file. This change
 ### Changed
 - Update dependency to Clojure 1.7. [#59](https://github.com/apa512/clj-rethinkdb/pull/59)
 - The query parts of this library have been converted to use Clojure 1.7 Reader Conditionals. This means that you can generate queries in ClojureScript and run them on the server (be very careful with this!). [#59](https://github.com/apa512/clj-rethinkdb/pull/59)
+- Add core.async channel API for executing queries [#37](https://github.com/apa512/clj-rethinkdb/pull/37)
 
 ## [0.10.1] - 2015-07-08
 ### Added
 - Add docstring for `rethinkdb.core/close`. [#44](https://github.com/apa512/clj-rethinkdb/pull/44)
 - Add alias for `rethinkdb.core/connect` into `rethinkdb.query/connect` so you don't need to import the `rethinkdb.core` namespace. [#44](https://github.com/apa512/clj-rethinkdb/pull/44)
 - Add CHANGELOG.md [#47](https://github.com/apa512/clj-rethinkdb/pull/47)
-- Add core.async channel API for executing queries [#37](https://github.com/apa512/clj-rethinkdb/pull/37)
 - Added explicit support for RethinkDB 2.0 (It worked before but wasn't documented as such).
 
 ### Changed
